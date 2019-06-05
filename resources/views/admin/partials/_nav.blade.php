@@ -28,7 +28,7 @@
     </div>
 
 
-    <li class="nav-item {{Request::is('admin/roles/') ? "active" : "" }}">
+    <li class="nav-item {{Request::is('admin/roles') ? "active" : "" }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#role"
            aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-users"></i>
