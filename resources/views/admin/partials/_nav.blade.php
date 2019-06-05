@@ -54,8 +54,8 @@
              data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Roles</h6>
-                <a class="collapse-item" href="">Create Teacher</a>
-                <a class="collapse-item" href="">Assign Teacher Role</a>
+                <a class="collapse-item" href="{{ route('users.create') }}">Create User</a>
+                <a class="collapse-item" href="{{ route('users.index') }}">Show Users</a>
             </div>
         </div>
     </li>
