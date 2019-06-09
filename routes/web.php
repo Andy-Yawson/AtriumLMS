@@ -36,4 +36,7 @@ Route::prefix('admin')->group(function (){
 
     //=========== Users controller ============
     Route::resource('users','UsersController');
+
+    //============ Courses Controller =============
+    Route::resource('courses','CoursesController');
 });

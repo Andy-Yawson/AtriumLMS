@@ -15,6 +15,7 @@
 	<!-- CSS Files -->
 	<link href="{{asset('fontawesome/css/all.min.css')}}" rel="stylesheet" />
 	<link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet" />
+	<link href="{{asset('css/select-2.min.css')}}" rel="stylesheet" />
 	<link href="{{asset('css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" />
 	@yield('stylesheets')
 </head>

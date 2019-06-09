@@ -31,7 +31,7 @@
     <li class="nav-item {{Request::is('admin/roles') ? "active" : "" }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#role"
            aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fas fa-fw fa-users"></i>
+            <i class="fas fa-fw fa-user-lock"></i>
             <span>Roles</span>
         </a>
         <div id="role" class="collapse" aria-labelledby="headingUtilities"
@@ -56,6 +56,22 @@
                 <h6 class="collapse-header">Roles</h6>
                 <a class="collapse-item" href="{{ route('users.create') }}">Create User</a>
                 <a class="collapse-item" href="{{ route('users.index') }}">Show Users</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#course"
+           aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-book-open"></i>
+            <span>Courses</span>
+        </a>
+        <div id="course" class="collapse" aria-labelledby="headingUtilities"
+             data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Courses</h6>
+                <a class="collapse-item" href="{{ route('courses.create') }}">Create Course</a>
+                <a class="collapse-item" href="{{ route('courses.index') }}">Show Courses</a>
             </div>
         </div>
     </li>
