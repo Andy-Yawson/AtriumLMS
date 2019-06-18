@@ -1,6 +1,6 @@
 @extends('admin.layout.master')
 
-@section('title','Show All Roles')
+@section('title','Show All Courses')
 
 @section('content')
 
