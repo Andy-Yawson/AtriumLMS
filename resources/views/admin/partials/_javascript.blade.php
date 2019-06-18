@@ -1,5 +1,4 @@
 <!-- Bootstrap core JavaScript-->
-<script src="{{asset('js/jquery.min.js')}}"></script>
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 
 <!-- Core plugin JavaScript-->
@@ -11,4 +10,9 @@
 <script src="{{asset('js/datatables-demo.js')}}"></script>
 <script src="{{asset('js/dataTables.bootstrap4.min.js')}}"></script>
 <script src="{{asset('js/select2.min.js')}}"></script>
+<script src="{{ asset('vendor/unisharp/laravel-ckeditor/adapters/jquery.js') }}"></script>
+<script>
+    $('textarea').ckeditor();
+    // $('.textarea').ckeditor(); // if class is prefered.
+</script>
 @yield('scripts')

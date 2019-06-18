@@ -15,7 +15,9 @@
 	<!-- CSS Files -->
 	<link href="{{asset('fontawesome/css/all.min.css')}}" rel="stylesheet" />
 	<link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet" />
-	<link href="{{asset('css/select-2.min.css')}}" rel="stylesheet" />
+	<link href="{{asset('css/select2.min.css')}}" rel="stylesheet" />
 	<link href="{{asset('css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" />
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
 	@yield('stylesheets')
 </head>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Course;
+use App\Role;
+use App\User;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
@@ -33,7 +35,8 @@ class CoursesController extends Controller
      */
     public function create()
     {
-        return view('admin.course.create_course');
+        $tutors = User::where('role_id',2)->get();
+        return view('admin.course.create_course',compact('tutors'));
     }
 
     /**
@@ -72,7 +75,8 @@ class CoursesController extends Controller
             'price' => $request->price,
             'start' => $request->start,
             'image' => $file_name,
-            'published' => $publish
+            'published' => $publish,
+            'tutor_id' => $request->tutor
         ]);
 
         return redirect()->route('courses.index')

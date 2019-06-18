@@ -23,6 +23,7 @@ class CreateCoursesTable extends Migration
             $table->string('image');
             $table->date('start');
             $table->integer('published');
+            $table->integer('tutor_id');
             $table->timestamps();
         });
     }

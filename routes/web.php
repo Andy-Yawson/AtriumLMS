@@ -39,4 +39,11 @@ Route::prefix('admin')->group(function (){
 
     //============ Courses Controller =============
     Route::resource('courses','CoursesController');
+
+    //============== Topic Controller =============
+    Route::resource('topics','TopicController');
+
+    //============ SubTopic Controller =============
+    Route::resource('subtopics','TopicController');
+
 });

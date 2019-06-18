@@ -28,6 +28,16 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="titleInputField">Course Tutor</label>
+                            <select class="form-control select2" name="tutor">
+                                @foreach($tutors as $tutor)
+                                    <option value="{{ $tutor->id }}">{{ $tutor->name }}</option>
+                                @endforeach
+                            </select>
+                            <small id="emailHelp" class="form-text text-muted">Tutor to teach this course</small>
+                        </div>
+
+                        <div class="form-group">
                             <label for="titleInputField">Course Price</label>
                             <input type="text" class="form-control" id="titleInputField"  name="price"
                                    placeholder="Enter course price" required>
@@ -49,7 +59,7 @@
 
                         <div class="form-group">
                             <label for="titleInputField">Course Short Description</label>
-                            <textarea class="form-control"
+                            <textarea class="form-control textarea"
                                       name="short_desc" placeholder="Enter course short description" required></textarea>
                         </div>
 
@@ -83,4 +93,12 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script type="text/javascript">
+        $('.select2').select2({
+
+        });
+    </script>
 @endsection

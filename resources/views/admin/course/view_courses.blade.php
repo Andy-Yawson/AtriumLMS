@@ -60,6 +60,10 @@
                                 <a href="{{route('courses.edit',$course->id)}}" class="btn btn-info btn-circle btn-sm">
                                     <i class="fas fa-pen"></i>
                                 </a>
+                                <a href="" class="btn btn-primary btn-circle btn-sm"
+                                title="Add a topic">
+                                    <i class="fas fa-plus"></i>
+                                </a>
                             </td>
                         </tr>
                     @endforeach
