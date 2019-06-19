@@ -40,10 +40,12 @@ Route::prefix('admin')->group(function (){
     //============ Courses Controller =============
     Route::resource('courses','CoursesController');
 
-    //============== Topic Controller =============
-    Route::resource('topics','TopicController');
-
-    //============ SubTopic Controller =============
-    Route::resource('subtopics','TopicController');
+    //=============== Lessons Controller ==========
+    Route::get('/lessons/create/{id}','LessonsController@create')->name('lessons.create');
+    Route::get('/lessons/index','LessonsController@index')->name('lessons.index');
+    Route::get('/lessons/edit/{id}','LessonsController@edit')->name('lessons.edit');
+    Route::post('/lessons/create','LessonsController@store')->name('lessons.store');
+    Route::put('/lessons/update/{id}','LessonsController@update')->name('lessons.update');
+    Route::delete('/lessons/destroy/{id}','LessonsController@destroy')->name('lessons.destroy');
 
 });

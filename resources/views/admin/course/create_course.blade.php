@@ -1,6 +1,6 @@
 @extends('admin.layout.master')
 
-@section('title','Create Role')
+@section('title','Create Course')
 
 @section('stylesheets')
     <link rel="stylesheet" href="{{ asset('css/switch.css') }}">

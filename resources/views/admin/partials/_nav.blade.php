@@ -76,6 +76,21 @@
         </div>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#lesson"
+           aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-book-open"></i>
+            <span>Lessons</span>
+        </a>
+        <div id="lesson" class="collapse" aria-labelledby="headingUtilities"
+             data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Courses</h6>
+                <a class="collapse-item" href="{{ route('lessons.index') }}">Show Lessons</a>
+            </div>
+        </div>
+    </li>
+
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
