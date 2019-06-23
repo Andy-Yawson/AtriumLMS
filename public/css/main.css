@@ -1,0 +1,149 @@
+body,html{
+    background-color: #f8f8f8 !important;
+}
+
+
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .recommend-div{
+        display: none;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 540px) {
+    .recommend-div{
+        display: none !important;
+    }
+}
+
+/*================ Recommendations ================*/
+.recommend-container{
+    width: 90%;
+    margin: auto;
+}
+
+.recommend-title{
+    color: #f7f7f7;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.33em;
+    margin-bottom: 16px;
+}
+
+.recommend-para{
+    color: #f7f7f7;
+    font-size: 16px;
+}
+
+.vector-img > div > img{
+    margin-top: 10%;
+}
+
+.recommend-section{
+    border-top: solid;
+    border-color: #721c24;
+    border-top-width: 10px;
+}
+
+.category-h5{
+    margin-top: 14%;
+}
+
+.div-header{
+    font-size: 28px;
+    font-weight: 300;
+}
+
+footer{
+    border-bottom: solid;
+    border-color: #721c24;
+    border-bottom-width: 7px;
+}
+
+.detail-header-p{
+    font-size: 21px;
+    line-height: 27px;
+    color: #c6c8ca;
+}
+
+.detail-header-h2{
+    font-size: 36px;
+    line-height: 41px;
+}
+
+.course-rating-text p i{
+    color: goldenrod;
+}
+
+.course-rating-text p span.rating,
+.course-rating-text p span.enrolled{
+    color: #c6c8ca;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.course-vid h5{
+    font-size: 30px;
+}
+
+.play-button{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(85,85,85,0.8);
+    color: white;
+    padding: 12px 24px;
+}
+
+.play-button i{
+    color: #f7f7f7;
+}
